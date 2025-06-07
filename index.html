@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chibot - Your AI Assistant, Always Ready</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo"><img src="./icons/chibot_32.png"> Chibot</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#support" class="nav-link">Support</a>
+                <button class="btn btn-primary" id="downloadBtn">Download</button>
+                <button class="btn btn-outline" id="loginBtn">Login</button>
+            </div>
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="robot-container">
+                    <div class="robot">
+                        <img src="./icons/chibot_256.png">
+                        <!--div class="robot-head">
+                            <div class="robot-eyes">
+                                <div class="eye left-eye"></div>
+                                <div class="eye right-eye"></div>
+                            </div>
+                            <div class="robot-mouth"></div>
+                        </div>
+                        <div class="robot-body">
+                            <div class="robot-screen">
+                                <div class="download-widget">
+                                    <span class="widget-text">Download Now</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="robot-arms">
+                            <div class="arm left-arm"></div>
+                            <div class="arm right-arm"></div>
+                        </div>
+                    </div-->
+                </div>
+            </div>
+            <h1 class="hero-title">Your AI Assistant, Always Ready</h1>
+            <p class="hero-description">
+                Chibot is a cross-platform chatbot application that brings the power of AI language models to your fingertips. Chat with OpenAI and Gemini models seamlessly on any device.
+            </p>
+            <button class="btn btn-primary btn-large" id="heroDownloadBtn" onclick="location.href='https://github.com/mutse/chibot/releases'">Download Now</button>
+        </div>
+    </section>
+
+    <!-- Key Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            <p class="section-subtitle">Chibot offers a range of features designed to enhance your AI interaction experience.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>Intuitive Chat Interface</h3>
+                    <p>Engage with AI models through a clean and user-friendly chat interface, making conversations natural and efficient.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Cross-Platform Support</h3>
+                    <p>Access Chibot on any device, including desktops, tablets, and smartphones, ensuring seamless communication across all your platforms.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure and Private</h3>
+                    <p>Your conversations are kept private and secure, with end-to-end encryption and strict data protection policies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cross-Platform Section -->
+    <section class="platforms">
+        <div class="container">
+            <h2 class="section-title">Experience Chibot Across All Your Devices</h2>
+            <p class="section-subtitle">
+                Chibot adapts to your workflow, providing a consistent and optimized experience whether you're on your desktop, tablet, or mobile device.
+            </p>
+            
+            <div class="platforms-grid">
+                <div class="platform-card">
+                    <div class="platform-image desktop-image">
+                        <div class="device-mockup desktop-mockup">
+                            <div class="screen">
+                                <div class="chat-interface">
+                                    <div class="chat-avatar">🐕</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Desktop</h3>
+                    <p>Enjoy a spacious and focused environment for in-depth conversations and multitasking.</p>
+                </div>
+                
+                <div class="platform-card">
+                    <div class="platform-image tablet-image">
+                        <div class="device-mockup tablet-mockup">
+                            <div class="screen">
+                                <div class="chat-interface">
+                                    <div class="chat-avatar">🐻</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Tablet</h3>
+                    <p>Interact with AI on the go with a responsive and intuitive interface optimized for touch.</p>
+                </div>
+                
+                <div class="platform-card">
+                    <div class="platform-image mobile-image">
+                        <div class="device-mockup mobile-mockup">
+                            <div class="screen">
+                                <div class="chat-interface">
+                                    <div class="chat-avatar">🐶</div>
+                                    <div class="app-name">Chibot</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Mobile</h3>
+                    <p>Stay connected with your AI assistant wherever you are, with a compact and efficient mobile experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2 class="cta-title">Ready to Transform Your AI Experience?</h2>
+            <p class="cta-description">
+                Download Chibot today and start exploring the endless possibilities of AI-powered conversations.
+            </p>
+            <button class="btn btn-primary btn-large" id="ctaBtn">Get Started</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-link">🐦</a>
+                <a href="#" class="social-link">📧</a>
+            </div>
+            <div class="footer-copyright">
+                © 2025 Chibot. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Auth Modal -->
+    <div class="modal" id="authModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Login to Chibot</h3>
+                <button class="modal-close" id="modalClose">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="authForm">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <div class="form-group" id="confirmPasswordGroup" style="display: none;">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" id="authSubmitBtn">Login</button>
+                </form>
+                <p class="auth-switch">
+                    <span id="authSwitchText">Don't have an account?</span>
+                    <a href="#" id="authSwitchLink">Sign up</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Download Modal -->
+    <div class="modal" id="downloadModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Download Chibot</h3>
+                <button class="modal-close" id="downloadModalClose">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="download-options">
+                    <div class="download-option">
+                        <div class="download-icon">🖥️</div>
+                        <h4>Desktop</h4>
+                        <p>Windows, macOS, Linux</p>
+                        <button class="btn btn-primary">Download</button>
+                    </div>
+                    <div class="download-option">
+                        <div class="download-icon">📱</div>
+                        <h4>Mobile</h4>
+                        <p>iOS & Android</p>
+                        <button class="btn btn-primary">Download</button>
+                    </div>
+                    <div class="download-option">
+                        <div class="download-icon">🌐</div>
+                        <h4>Web App</h4>
+                        <p>Use in browser</p>
+                        <button class="btn btn-primary">Launch</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="config.js"></script>
+    <script src="auth.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
