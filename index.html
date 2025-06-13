@@ -4,166 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CloudNative Suite - Cloud Native DevOps Automation</title>
+    <link rel="icon" href="./icons/cloudnative_32.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="./icons/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <nav class="container">
+            <a href="#" class="logo"><img src="icons/cloudnative_32.png" style="height: 32px; vertical-align: middle;"> CloudNative Suite</a>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#modules">Modules</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="language-selector">
+                    <select id="language" onchange="toggleLanguage()">
+                        <option value="en">English</option>
+                        <option value="zh">中文</option>
+                    </select>
+                </li>
+            </ul>
+            <a href="#get-started" class="cta-btn">Get Started</a>
+        </nav>
+    </header>
 
-<!-- Navigation -->
-<nav class="navbar">
-    <div class="container">
-        <div class="nav-brand">
-            <span class="logo"><img src="./icons/cloudnative_32.png"> CloudNative Suite</span>
-        </div>
-        <div class="nav-menu">
-            <a href="#features" class="nav-link">Features</a>
-            <a href="#modules" class="nav-link">Modules</a>
-            <a href="#pricing" class="nav-link">Pricing</a>
-            <a href="#support" class="nav-link">Support</a>
-            <button class="btn btn-primary">Download</button>
-            <button class="btn btn-outline">Login</button>
-        </div>
-    </div>
-</nav>
+    <main>
+        <!-- 引入子模块 -->
+        <div id="hero-section"></div>
+        <div id="features-section"></div>
+        <div id="modules-section"></div>
+    </main>
 
-<!-- Hero Section -->
-<section class="hero">
-    <div class="container">
-        <div class="hero-content">
-            <img src="./icons/cloudnative_256.png" class="hero-logo">
-            <h1 class="hero-title">Cloud Native DevOps Automation, Simplified.</h1>
-            <p class="hero-description">
-                Unified automation platform for infrastructure provisioning, Kubernetes backup, configuration orchestration, AI-powered coding and intelligent AIOps — designed for cloud-native teams.
-            </p>
-            <button class="btn btn-primary btn-large" onclick="location.href='https://github.com/svc-design'">Start Now</button>
-        </div>
-    </div>
-</section>
+    <div id="footer-section"></div>
 
-<!-- Unified Features -->
-<section class="features" id="features">
-    <div class="container">
-        <h2 class="section-title">Unified Automation Stack</h2>
-        <p class="section-subtitle">
-            CloudNative Suite integrates multiple specialized modules into one lightweight automation workflow for modern DevOps engineers.
-        </p>
-
-        <div class="features-grid">
-
-            <div class="feature-card">
-                <div class="feature-icon">🛠️</div>
-                <h3>PulumiGo - Multi-Cloud IaC</h3>
-                <p>Provision cloud resources across AWS, GCP, Azure, and Kubernetes using Golang with Pulumi SDK, fully integrated into CI/CD pipelines.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">🔐</div>
-                <h3>KubeGuard - Kubernetes Backup</h3>
-                <p>Velero + Rsync combined solution for full-stack Kubernetes application & node data backup, fast restore, and cluster migration.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">📦</div>
-                <h3>CraftWeave - Configuration Orchestration</h3>
-                <p>YAML Playbook driven configuration delivery and task orchestration, optimized for bare metal, edge nodes and hybrid clusters.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">🤖</div>
-                <h3>CodePRobot - AI Code Assistant</h3>
-                <p>Automatically generate PRs from GitHub Issues via AI-powered patch generation, code review and testing automation.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">📊</div>
-                <h3>OpsAgent - AIOps Assistant</h3>
-                <p>Monitor system metrics, detect anomalies, perform root cause analysis, and generate intelligent operational insights.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">🚀</div>
-                <h3>XStream - Network Accelerator</h3>
-                <p>Cross-border developer proxy built with VLESS+gRPC to ensure fast, stable access to GitHub, DockerHub, AI models and global resources.</p>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- Modules Section -->
-<section class="products" id="modules">
-    <div class="container">
-        <h2 class="section-title">Modular Components</h2>
-
-        <div class="product-grid">
-            <div class="product-card">
-                <h3>PulumiGo</h3>
-                <p>Multi-cloud IaC engine built with Pulumi SDK and Go.</p>
-                <a href="https://github.com/svc-design/PulumiGo" class="btn btn-outline">GitHub</a>
-            </div>
-
-            <div class="product-card">
-                <h3>KubeGuard</h3>
-                <p>Kubernetes cluster application and node-level backup system.</p>
-                <a href="https://github.com/svc-design/KubeGuard" class="btn btn-outline">GitHub</a>
-            </div>
-
-            <div class="product-card">
-                <h3>CraftWeave</h3>
-                <p>Lightweight task execution & configuration orchestration engine.</p>
-                <a href="https://github.com/svc-design/CraftWeave" class="btn btn-outline">GitHub</a>
-            </div>
-
-            <div class="product-card">
-                <h3>CodePRobot</h3>
-                <p>AI-driven GitHub Issue to Pull Request generator and code patching tool.</p>
-                <a href="https://github.com/svc-design/CodePRobot" class="btn btn-outline">GitHub</a>
-            </div>
-
-            <div class="product-card">
-                <h3>OpsAgent</h3>
-                <p>AIOps-powered intelligent monitoring, anomaly detection and RCA.</p>
-                <a href="https://github.com/svc-design/CodePRobot" class="btn btn-outline">GitHub</a>
-            </div>
-
-            <div class="product-card">
-                <h3>XStream</h3>
-                <p>Cross-border developer proxy accelerator for global accessibility.</p>
-                <a href="https://github.com/svc-design/Xstream" class="btn btn-outline">GitHub</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- CTA -->
-<section class="cta">
-    <div class="container">
-        <h2 class="cta-title">Cloud Native DevOps Automation, Simplified.</h2>
-        <p class="cta-description">
-            Build, deploy, monitor and operate your cloud-native infrastructure with intelligent automation.
-        </p>
-        <button class="btn btn-primary btn-large">Get Started</button>
-    </div>
-</section>
-
-<!-- Footer -->
-<footer class="footer">
-    <div class="container">
-        <div class="footer-links">
-            <a href="#privacy">Privacy Policy</a>
-            <a href="#terms">Terms of Service</a>
-            <a href="#contact">Contact Us</a>
-        </div>
-        <div class="footer-social">
-            <a href="#" class="social-link">🐦</a>
-            <a href="#" class="social-link">📧</a>
-        </div>
-        <div class="footer-copyright">
-            © 2025 CloudNative Suite. All rights reserved.
-        </div>
-    </div>
-</footer>
-
+    <script src="scripts.js"></script>
 </body>
 </html>
