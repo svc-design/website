@@ -18,7 +18,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const selector = this.getAttribute('href');
-        if (selector && selector.length > 1) {  // 过滤掉 href="#" 等空 id
+        if (selector && selector.length > 1) {
             try {
                 const target = document.querySelector(selector);
                 if (target) {
@@ -31,7 +31,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 console.warn(`Invalid selector: ${selector}`, err);
             }
         } else {
-            // 可选：跳过空锚点时的调试输出
             console.warn(`Skipping empty anchor href: ${selector}`);
         }
     });
@@ -57,10 +56,12 @@ function loadSection(id, file) {
         });
 }
 
-// 页面加载时动态引入各拆分模块
+// 页面加载时动态引入各拆分模块（整理版）
 document.addEventListener('DOMContentLoaded', function () {
     loadSection('hero-section', 'hero.html');
     loadSection('features-section', 'features.html');
-    loadSection('modules-section', 'modules.html');
+    loadSection('open-sources-section', 'open-sources.html');
+    loadSection('download-section', 'download.html');
     loadSection('footer-section', 'footer.html');
 });
+

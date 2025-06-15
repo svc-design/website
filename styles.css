@@ -249,3 +249,74 @@ nav {
         grid-template-columns: 1fr;
     }
 }
+
+.platform-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.platform-links .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 30px;
+}
+
+/* Download Section 改造 */
+.download {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.download-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+.download-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+    backdrop-filter: blur(10px);
+}
+
+.download-card:hover {
+    transform: translateY(-8px);
+}
+
+.download-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.platform-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.platform-links a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    background: linear-gradient(45deg, #ff6b6b, #ee5a52);
+    color: white;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.3s;
+    box-shadow: 0 4px 10px rgba(238, 90, 82, 0.4);
+}
+
+.platform-links a:hover {
+    transform: translateY(-3px);
+}
